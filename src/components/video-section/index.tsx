@@ -1,5 +1,5 @@
 // components/VideoSection.tsx
-import { Box, Text, AspectRatio } from "@chakra-ui/react";
+import { Box, AspectRatio } from "@chakra-ui/react";
 
 export default function VideoSection() {
 	return (
