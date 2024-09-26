@@ -1,16 +1,16 @@
-import { fonts } from './fonts'
-import { Providers } from './providers'
+import { fonts } from "./fonts";
+import { Providers } from "./providers";
 
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode,
+	children: React.ReactNode;
 }) {
-  return (
-    <html lang='en' className={fonts.plusJakartaSans.variable}>
-      <body>
-        <Providers>{children}</Providers>
-      </body>
-    </html>
-  )
+	return (
+		<html lang="en" className={fonts.plusJakartaSans.variable}>
+			<body>
+				<Providers>{children}</Providers>
+			</body>
+		</html>
+	);
 }
