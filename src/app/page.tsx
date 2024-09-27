@@ -50,8 +50,8 @@ export default function Home() {
 	return (
 		<>
 			<StarknetProvider>
-			<ConnectWallet></ConnectWallet>
 			<Header />
+			<ConnectWallet></ConnectWallet>
 			<VStack spacing={8} align="stretch">
 				<Box as="section" bg="gray.900" color="yellow.400" py={16}>
 					<Hero />
