@@ -6,7 +6,7 @@ export default function Faqs() {
 					{/* Section header */}
 					<div className="pb-12 md:pb-20">
 						<h2 className="h2 font-cabinet-grotesk">
-							YourQuestions, Our answers
+							Your Questions, Our answers
 						</h2>
 					</div>
 					{/* Columns */}
@@ -19,9 +19,9 @@ export default function Faqs() {
 									When will ZKTT be completed?
 								</h4>
 								<p className="text-gray-500">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-									do eiusmod tempor incididunt ut labore et dolore magna aliqua,
-									ut enim ad minim veniam.
+									By the end of October we plan to have a fully working beta
+									running locally. By the end of November we plan to have a V1
+									on Sepolia.
 								</p>
 							</div>
 							{/* Item */}
@@ -30,9 +30,8 @@ export default function Faqs() {
 									Where can I get updates?
 								</h4>
 								<p className="text-gray-500">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-									do eiusmod tempor incididunt ut labore et dolore magna aliqua,
-									ut enim ad minim veniam.
+									You can visit our website kzTable.top for more information
+									about the current state of the games development
 								</p>
 							</div>
 						</div>
@@ -41,12 +40,12 @@ export default function Faqs() {
 							{/* Item */}
 							<div className="space-y-2">
 								<h4 className="text-xl font-cabinet-grotesk font-bold">
-									What was the inspiration for the game
+									What was the inspiration for the game?
 								</h4>
 								<p className="text-gray-500">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-									do eiusmod tempor incididunt ut labore et dolore magna aliqua,
-									ut enim ad minim veniam.
+									We wanted to build a blockchain based card game that is
+									similar to the fun game Hearthstone that is fun for people of
+									all ages and sizes.
 								</p>
 							</div>
 							{/* Item */}
@@ -55,9 +54,9 @@ export default function Faqs() {
 									How can I contribute to this project?
 								</h4>
 								<p className="text-gray-500">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-									do eiusmod tempor incididunt ut labore et dolore magna aliqua,
-									ut enim ad minim veniam.
+									Currently our game is still in development, but once it is
+									released on Sepolia you can play test it and send us feedback
+									via email.
 								</p>
 							</div>
 						</div>
