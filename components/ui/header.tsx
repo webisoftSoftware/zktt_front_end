@@ -1,4 +1,45 @@
+//import { ConnectWallet } from '@/app/(default)/page'
 import Link from 'next/link'
+
+// controller imports
+import { useEffect, useState } from "react";
+import { StarknetProvider } from "../../app/controller/StarknetProvider";
+import { useAccount, useConnect, useDisconnect } from "@starknet-react/core";
+import CartridgeConnector from "@cartridge/connector";
+
+// controller integration
+export function ConnectWallet() {
+  const { connect, connectors } = useConnect();
+  const { disconnect } = useDisconnect();
+  const { address } = useAccount();
+
+  const connector = connectors[0] as unknown as CartridgeConnector;
+
+  const [username, setUsername] = useState<string>();
+  useEffect(() => {
+    if (!address) return;
+    connector.username()?.then((n) => setUsername(n));
+  }, [address, connector]);
+
+  return (
+    <div>
+      {address && (
+        <>
+          <p>Account: {address} </p>
+          {username && <p>Username: {username}</p>}
+        </>
+      )}
+
+      <button
+        onClick={() => {
+          address ? disconnect() : connect({ connector });
+        }}
+      >
+        {address ? "Disconnect" : "Connect"}
+      </button>
+    </div>
+  );
+}
 
 export default function Header({ nav = true }: {
   nav?: boolean
@@ -34,10 +75,10 @@ export default function Header({ nav = true }: {
                     Sign in
                   </Link>
                 </li>
-                <li className="ml-3">
-                  <Link className="btn-sm text-white bg-blue-500 hover:bg-blue-600 w-full shadow-sm" href="/signup">
-                    Join The Community
-                  </Link>
+                <li className="ml-3">             
+                    <StarknetProvider>
+                      <ConnectWallet></ConnectWallet>
+                    </StarknetProvider>                 
                 </li>
               </ul>
             </nav>
