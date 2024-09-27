@@ -1,3 +1,5 @@
+/* eslint-disable no-use-before-define */
+
 "use client";
 
 import Link from "next/link";
