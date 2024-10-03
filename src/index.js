@@ -13,16 +13,16 @@ function Root() {
     return (
         <>
             <nav>
-                <img alt="ZK Table Top & Webisoft/Laplace link" src="ll_logo.png" width="35"/>
+                <img alt="ZK Table Top & Webisoft x Laplace link" src="ll_logo.png" width="35"/>
                 <a href="https://www.webisoft.com">zKTT<br/>wbsft x laplace</a>
-                <p>Coming to <br/>starknet 2025</p>
+                <p>coming to <br/>starknet 2025</p>
             </nav>
             <div className={"three-js"}>
                 <App/>
             </div>
             <footer>
                 <div>
-                    <a href="https://github.com/webisoftSoftware">github</a> | <a
+                    <a href="https://github.com/webisoftSoftware/zktt">github</a> | <a
                     href="https://x.com/zktabletop">twitter</a>
                 </div>
                 <a href="mailto:zktt.team@gmail.com">get in touch</a>

@@ -8,7 +8,7 @@ import { easing } from 'maath'
 import './util'
 
 export const App = () => (
-  <Canvas camera={{ position: [0, 0, 100], fov: 12.5 }}>
+  <Canvas camera={{ position: [0, 0, 100], fov: 14 }}>
     <fog attach="fog" args={['#dededf', 10.5, 14]} />
     <ScrollControls pages={4} infinite>
       <Rig rotation={[0, 0, 0.15]}>
@@ -50,8 +50,6 @@ function Card({ url, ...props }) {
   const pointerOut = () => hover(false)
   useFrame((state, delta) => {
     easing.damp3(ref.current.scale, hovered ? 1.15 : 1, 0.1, delta)
-    // easing.damp(ref.current.material, 'radius', hovered ? 0.25 : 0.1, 0.2, delta) // this is the zoom
-    // easing.damp(ref.current.material, 'zoom', hovered ? 1 : 0.9, 0.2, delta) // play with ?
   })
   return (
     <Image 
