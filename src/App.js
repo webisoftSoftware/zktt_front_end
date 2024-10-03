@@ -51,7 +51,7 @@ function Card({ url, ...props }) {
   useFrame((state, delta) => {
     easing.damp3(ref.current.scale, hovered ? 1.15 : 1, 0.1, delta)
     // easing.damp(ref.current.material, 'radius', hovered ? 0.25 : 0.1, 0.2, delta) // this is the zoom
-    // easing.damp(ref.current.material, 'zoom', hovered ? 1 : 1.5, 0.2, delta)
+    // easing.damp(ref.current.material, 'zoom', hovered ? 1 : 0.9, 0.2, delta) // play with ?
   })
   return (
     <Image 
@@ -63,6 +63,7 @@ function Card({ url, ...props }) {
       onPointerOut={pointerOut} 
       {...props}
       fit="cover" // Ensures the image covers the geometry without distortion
+      anisotropy={32} // Increase anisotropy for better texture quality
     >
       <bentPlaneGeometry args={[0.05, 0.5038, 0.7, 20, 20]} /> {/* Adjusted width to 0.1 and height to 0.15 for portrait orientation */}
     </Image>
@@ -81,7 +82,15 @@ function Banner(props) {
   return (
     <mesh ref={ref} {...props}>
       <cylinderGeometry args={[1.6, 1.6, 0.14, 128, 16, true]} />
-      <meshSineMaterial map={texture} map-anisotropy={32} map-repeat={[42, 1]} side={THREE.DoubleSide} toneMapped={false} />
+      <meshSineMaterial 
+        map={texture} 
+        map-anisotropy={32} 
+        map-repeat={[42, 1]} 
+        side={THREE.DoubleSide} 
+        toneMapped={false} 
+        transparent={true} // Enable transparency
+        opacity={0.77} // Adjust opacity as needed
+      />
     </mesh>
   )
 }

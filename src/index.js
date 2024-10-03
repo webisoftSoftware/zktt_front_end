@@ -1,6 +1,5 @@
 import { createRoot } from 'react-dom/client'
 import './styles.css'
-// import { Logo } from '@pmndrs/branding'
 import { App } from './App'
 
 /*
@@ -14,7 +13,7 @@ function Root() {
   return (
     <>
       <App />
-      <div style={{ position: 'absolute', pointerEvents: 'none', top: 0, left: 0, width: '100vw', height: '100vh' }}>
+      <div class="nav" style={{ position: 'absolute', pointerEvents: 'none', top: 0, left: 0, width: '100vw', height: '100vh' }}>
         <div style={{ position: 'absolute', top: 40, left: 30, width: 38.5 }}>  
         <img src="ll_logo.png" width="35"/>
         </div>
@@ -23,17 +22,15 @@ function Root() {
           <br />
         wbsft x laplace
         </a>
-        <a href="#">
-        <div style={{ position: 'absolute', top: 36.4, right: 37.1, fontSize: '12px', textAlign: 'center', border: '1.4px solid black', padding: '4.9px', borderRadius: '7px', background: 'linear-gradient(to right, rgba(236, 236, 228, 0.5), rgba(232, 232, 222, 0.5))'}}>  
-        connect
+        <div style={{ position: 'absolute', top: 45, right: 38.4, fontSize: '12px', textAlign: 'center' }}>  
+        coming to 
         <br />
-        controller
+        starknet 2025
         </div>
-        </a> 
-        <div style={{ position: 'absolute', bottom: 40, left: 38.4, fontSize: '12px' }}> 
+        <div style={{ position: 'absolute', top: '93%', left: 38.4, fontSize: '12px', zIndex: 100 }}> 
         <a href="https://github.com/webisoftSoftware">github</a>  |  <a href="https://x.com/zktabletop">twitter</a>
         </div>
-        <div style={{ position: 'absolute', bottom: 40, right: 38.4, fontSize: '12px' }}>  
+        <div style={{ position: 'absolute', top: '93%', right: 38.4, fontSize: '12px' }}>  
         <a href="mailto:zktt.team@gmail.com">get in touch</a>
         </div>
       </div>{' '}
