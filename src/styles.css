@@ -2,23 +2,55 @@
 
 * {
   box-sizing: border-box;
-}
-
-html,
-body,
-#root {
-  width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+nav {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  margin: auto;
+  display: flex;
+  padding: 70px 30px;
+  align-items: center;
+}
+
+nav img {
+  width: 38.5px;
+  margin-right: 15px;
+}
+
+nav a {
+  justify-self: start;
+  font-size: 14px;
+}
+
+nav p {
+  margin-left: auto;
+  text-align: center;
+}
+
+.three-js {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
 }
 
 body {
-  font-family: 'Plus Jakarta Sans';
+  font-family: 'Plus Jakarta Sans', serif;
   background: #fdfdfd;
 }
-
 
 a {
   color: black;
@@ -32,6 +64,20 @@ a {
 
 svg {
   fill: black;
+}
+
+footer {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 30px;
 }
 
 @keyframes fade-in {

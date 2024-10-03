@@ -8,7 +8,7 @@ import { easing } from 'maath'
 import './util'
 
 export const App = () => (
-  <Canvas camera={{ position: [0, 0, 100], fov: 15 }}>
+  <Canvas camera={{ position: [0, 0, 100], fov: 18 }}>
     <fog attach="fog" args={['#dededf', 10.5, 14]} />
     <ScrollControls pages={4} infinite>
       <Rig rotation={[0, 0, 0.15]}>
