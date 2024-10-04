@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap');
 
+ 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,7 +36,6 @@ nav img {
 
 nav a {
   justify-self: start;
-  /* font-size: 14px; */
 }
 
 nav p {
@@ -79,7 +80,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 40px;
+  padding: 40px 40px 30px 40px;
 }
 
 @keyframes fade-in {
