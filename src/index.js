@@ -22,7 +22,7 @@ function Root() {
             </div>
             <footer>
                 <div>
-                    <a href="https://github.com/webisoftSoftware/zktt">github</a> | <a
+                    <a href="https://github.com/webisoftSoftware/">github</a> | <a
                     href="https://x.com/zktabletop">twitter</a>
                 </div>
                 <a href="mailto:zktt.team@gmail.com">get in touch</a>
