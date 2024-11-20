@@ -15,7 +15,7 @@ function Root() {
             <nav>
                 <img alt="ZK Table Top & Webisoft x Laplace link" src="ll_logo.png" width="35"/>
                 <a href="https://www.webisoft.com">zKTT<br/>wbsft x laplace</a>
-                <p>coming to <br/>starknet 2025</p>
+                <p>launching in <br/>2025</p>
             </nav>
             <div className={"three-js"}>
                 <App/>
